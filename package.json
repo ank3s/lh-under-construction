@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "page under construction",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ank3s/lh-under-construction"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
   },
   "author": "ank3s",
   "license": "ISC",
