@@ -2,7 +2,7 @@
   "name": "lh-construction",
   "version": "1.0.0",
   "description": "page under construction",
-  "main": "app.js",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/ank3s/lh-under-construction"
