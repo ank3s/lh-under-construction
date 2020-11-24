@@ -1,7 +1,10 @@
 const express = require('express')
-const app = express()
 const path = require('path');
-const port = 8000
+const app = express()
+
+app.set('port', process.env.PORT || 8000);
+
+console.log(app.get('port'))
 
 app.use('/static', express.static(__dirname + '/public'));
 
@@ -42,6 +45,8 @@ app.use(function (err, req, res, next) {
 });
 
 
-app.listen(port, () => {
-    console.log(`Under construction app listening at http://localhost:${port}`)
-})
+// app.listen(app.get('port'), () => {
+//     console.log(`Under construction app listening at ` + app.get('port'))
+// })
+
+module.exports = app;
